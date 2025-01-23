@@ -1,0 +1,41 @@
+.bar-info {
+    background-color: var(--color-primary);
+    color: #fff;
+}
+
+@media (max-width: 768px) {
+    .bar-info {
+        display: none;
+    }
+}
+
+.bar-info__links {
+    display: flex;
+    justify-content: flex-end;
+    gap: 70px;
+}
+
+.bar-info__links li {
+    cursor: pointer;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: color 0.2s;
+}
+
+.bar-info__link {
+    transition: 0.2s;
+}
+
+@media (hover: hover) {
+    .bar-info__link:hover {
+        color: var(--color-orange-ligth);
+    }
+}
+
+@media (hover: none) {
+    .bar-info__link:active {
+        color: var(--color-orange-ligth);
+    }
+}

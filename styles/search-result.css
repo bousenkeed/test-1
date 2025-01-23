@@ -1,0 +1,218 @@
+.search-result {
+    color: var(--color-primary);
+}
+
+.search-result__title {
+    font-family: 'Korataki';
+    font-size: 44px;
+    line-height: 140%;
+    margin-top: 60px;
+}
+
+@media (max-width: 1600px) {
+    .search-result__title {
+        font-size: 40px;
+    }
+}
+
+@media (max-width: 768px) {
+    .search-result__title {
+        font-size: 32px;
+        margin-top: 50px;
+    }
+}
+
+@media (max-width: 390px) {
+    .search-result__title {
+        font-size: 24px;
+        margin-top: 40px;
+    }
+}
+
+.search-result__list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin-top: 40px;
+    gap: clamp(10px, calc(40 / 1600 * 90vw), 40px);
+    margin-bottom: 60px;
+}
+
+@media (max-width: 1024px) {
+    .search-result__list {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .search-result__list > *:nth-child(n + 7) {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .search-result__list {
+        grid-template-columns: repeat(2, 1fr);
+        margin-bottom: 50px;
+    }
+    .search-result__list > *:nth-child(n + 7) {
+        display: block;
+    }
+}
+
+@media (max-width: 390px) {
+    .search-result__list {
+        margin-bottom: 40px;
+    }
+}
+
+.search-result__item {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.search-result__top {
+    position: relative;
+    display: flex;
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+.search-result__top img {
+    width: 100%;
+    height: 100%;
+    flex-grow: 1;
+    transition: 0.5s;
+}
+
+.search-result__top:hover img {
+    scale: 1.1;
+}
+
+.search-result__promotion-label {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    border-radius: 100px;
+    padding: 8px 0;
+    background-color: var(--color-primary);
+    font-size: 16px;
+    line-height: 140%;
+    color: #fff;
+    width: 126px;
+    border: none;
+    text-align: center;
+    z-index: 10;
+}
+
+@media (max-width: 768px) {
+    .search-result__promotion-label {
+        width: clamp(70px, calc(126 / 768 * 100vw), 126px);
+    }
+}
+
+@media (max-width: 390px) {
+    .search-result__promotion-label {
+        font-size: 14px;
+    }
+}
+
+.search-result__details-button-container {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding: 20px 30px;
+    border-radius: 0 0 20px 20px;
+    background-color: #f5f5f5b3;
+    translate: 0 100%;
+    opacity: 0;
+    transition: opacity 0.6s, translate 0.4s;
+}
+
+.search-result__details-button {
+    width: 100%;
+    text-align: center;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 140%;
+    color: #fff;
+    background-color: var(--color-orange);
+    border: none;
+    padding: 13px 0;
+    border-radius: 100px;
+    transition: background-color 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+@media (max-width: 600px) {
+    .search-result__details-button-container {
+        padding: 10px 20px;
+    }
+    .search-result__details-button {
+        font-weight: 500;
+        padding: 5px 0;
+    }
+}
+
+.search-result__top:hover .search-result__details-button-container {
+    opacity: 1;
+    translate: 0 0;
+}
+
+@media (hover: hover) {
+    .search-result__details-button:hover {
+        background-color: var(--color-orange-ligth);
+        transform: translateY(-2px) scale(1.05);
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    }
+    .search-result__details-button:active {
+        transform: translateY(0) scale(0.98);
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        transition: 0.1s;
+    }
+}
+
+@media (hover: none) {
+    .search-result__details-button:active {
+        background-color: var(--color-orange-ligth);
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        transition: none;
+    }
+}
+
+.search-result__item h2 {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 140%;
+    color: #231815;
+    margin-top: 20px;
+    margin-bottom: auto;
+}
+
+@media (max-width: 390px) {
+    .search-result__item h2 {
+        font-weight: 500;
+        font-size: 16px;
+    }
+}
+
+.search-result__bottom {
+    display: flex;
+    gap: 15px;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 140%;
+}
+
+.search-result__price {
+    color: var(--color-orange);
+}
+
+.search-result__promotion-price {
+    text-decoration: line-through;
+    color: #808080;
+}
+
+@media (max-width: 390px) {
+    .search-result__bottom {
+        font-weight: 500;
+        font-size: 16px;
+    }
+}
