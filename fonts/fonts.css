@@ -1,0 +1,68 @@
+@font-face {
+    font-display: swap;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    src: url('./lato/lato-regular-webfont.woff2') format('woff2'),
+        url('./lato/lato-regular-webfont.woff') format('woff'),
+        url('./lato/lato-regular-webfont.eot') format('eot');
+}
+
+@font-face {
+    font-display: swap;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 500;
+    src: url('./lato/lato-medium-webfont.woff2') format('woff2'),
+        url('./lato/lato-medium-webfont.woff') format('woff'),
+        url('./lato/lato-medium-webfont.eot') format('eot');
+}
+
+@font-face {
+    font-display: swap;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 600;
+    src: url('./lato/lato-semibold-webfont.woff2') format('woff2'),
+        url('./lato/lato-semibold-webfont.woff') format('woff'),
+        url('./lato/lato-semibold-webfont.eot') format('eot');
+}
+
+@font-face {
+    font-display: swap;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 700;
+    src: url('./lato/lato-bold-webfont.woff2') format('woff2'),
+        url('./lato/lato-bold-webfont.woff') format('woff'),
+        url('./lato/lato-bold-webfont.eot') format('eot');
+}
+
+@font-face {
+    font-display: swap;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    src: url('./roboto/roboto-v47-cyrillic_latin-regular.woff2') format('woff2'),
+        url('./roboto/roboto-v47-cyrillic_latin-regular.eot') format('eot');
+}
+
+@font-face {
+    font-display: swap;
+    font-family: 'Korataki';
+    font-style: normal;
+    font-weight: 700;
+    src: url('./korataki/korataki-webfont.woff2') format('woff2'),
+        url('./korataki/korataki-webfont.woff') format('woff'),
+        url('./korataki/korataki-webfont.eot') format('eot');
+}
+
+@font-face {
+    font-display: swap;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    src: url('./inter/inter-v18-latin-regular.woff2') format('woff2'),
+        url('./inter/inter-v18-latin-regular.woff') format('woff'),
+        url('./inter/inter-v18-latin-regular.eot') format('eot');
+}
