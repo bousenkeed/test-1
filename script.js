@@ -52,13 +52,13 @@ const toggleClasses = () => {
 };
 
 const handleBurgerButtonCLick = () => {
-    toggleClasses()
+    toggleClasses();
     document.body.classList.toggle('no-scroll', burgerMenu.classList.contains('active'));
 };
 
 const handleClickOutsideMenu = (event) => {
     if (!burgerMenuList.contains(event.target)) {
-        toggleClasses()
+        toggleClasses();
         document.body.classList.toggle(
             'no-scroll',
             burgerMenu.classList.contains('active')
@@ -67,7 +67,7 @@ const handleClickOutsideMenu = (event) => {
 };
 
 const handkeCloseBurgerMenu = () => {
-    toggleClasses()
+    toggleClasses();
     document.body.classList.toggle('no-scroll', burgerMenu.classList.contains('active'));
 };
 
@@ -88,6 +88,13 @@ items.forEach((item) => {
     <div class="search-result__item">
         <div class="search-result__top">
             <img src=${item.src} alt=${item.title} />
+            ${
+                'promotion' in item ? (
+                    `<div class="search-result__promotion-label">Акция</div>`
+                ) : (
+                    ''
+                )
+            }
             <div class="search-result__details-button-container">
                 <button class="search-result__details-button">Подробнее</button>
             </div>
