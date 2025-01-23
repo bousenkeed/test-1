@@ -194,6 +194,7 @@
 }
 
 .header__cart-count {
+    font-family: 'Roboto';
     position: absolute;
     border-radius: 50%;
     background-color: #fff;
