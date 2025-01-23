@@ -195,6 +195,7 @@
 
 .header__cart-count {
     font-family: 'Inter';
+    font-weight: 400;
     position: absolute;
     border-radius: 50%;
     background-color: #fff;
